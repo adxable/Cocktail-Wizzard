@@ -1,0 +1,34 @@
+// BREAKPOINTS
+
+@mixin bp-xlarge
+  @media only screen and (min-width: ($w-bp-large + 1px))
+    @content
+
+@mixin bp-large 
+  @media only screen and (min-width: ($w-bp-med + 1px)) and (max-width: $w-bp-large)
+    @content    
+    
+@mixin bp-medium
+  @media only screen and (min-width: ($w-bp-small + 1px)) and (max-width: $w-bp-med)
+    @content
+
+@mixin bp-small 
+  @media only screen and (max-width: $w-bp-small)
+    @content
+
+@mixin bp-medium-landscape
+  @media only screen and (max-width: 740px) and (orientation : landscape)
+    @content
+
+
+@mixin buttonFixed
+  background-color: $blue
+  border: none
+  position: fixed
+  top: 5px
+  
+  padding: 10px 20px
+  color: white
+  font-size: 20px
+  &:hover
+    cursor: pointer

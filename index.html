@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CoctailWizard</title>
+<!-- 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" type="text/css" href="css/css-min/style.min.css">
+
+</head>
+<body>
+	<div class="container">
+		<!-- // INSTRUCTION -->
+
+		<button id="modalBtn" class="infoBtn">info</button>
+		<a href="../index.html"><button class="backBtn">back</button></a>
+
+		<div id="modal" class="modal-1">
+			<div class="modal-content">
+				<span id="closeButton" class="closeModal">&times;</span>
+				<h3>Cocktail Wizzard</h3><br>
+				<h4>Calculate sinlge ingredient or cocktail cost, strenght by volume (%) and cocktail capacity in ml.</h4>
+				<div class="modal-body">
+					<ul>
+						<li>Follow instruction and fill all inputs.</li>
+						<li>Click <span>"ADD INGREDIENT"</span> button or press <span>ENTER</span> to add ingredient </li>
+						<li>Your ingredient will apear below (BLUE SECTION) You can delate it by clicking red button "X".  </li>
+						<li>Calculations are updating automatically- GREEN SECTION below inputs.</li>
+					</ul><br>
+					<p>	I would greatly appreciate it if you would give me some feedback!</p>
+				</div>
+				<a class="app-link" href="../index.html/#section3"><span>feedback</span></a>
+			</div>
+		</div>		
+		<div class="logo-container">
+			<h1>Cocktail</h1>
+			<div class="logo"></div>
+			<h1>Wizzard</h1>
+		</div>
+		<div class="inputs-container">
+
+			<div class="input-flex">
+				<div>Ingredient</div>
+				<input class="add__spiritname" type="text" placeholder="e.g vodka, apple juice">
+			</div>
+			<div class="input-flex">
+				<div>Ingredient amount in ml</div>
+				<input class="add__ingrMl" type="text" placeholder="e.g 40">
+			</div>
+			<div class="input-flex">
+				<div>The ingredient strength by volume (%)<br> ( If non-alcoholic ingredient than type 0 )</div>
+				<input class="add__vol" type="text" placeholder="e.g 40">
+			</div>
+			<div class="input-flex">
+				<div>Purchase price of a bottle from supplier</div>			
+				<input class="add__bottleCost " type="text" placeholder="e.g 46.50">
+			</div>
+			<div class="input-flex">
+				<div>Full bottle capacity in ml<br> ( 1 litre = 1000ml)</div>
+				<input class="add__bottleMl" type="text" placeholder="e.g 700">
+			</div>
+		
+			<button class="submit__ingr">add ingredient</button>
+		</div>
+
+		<div class="container-box">
+		<!-- CALCULATIONS DISPLAY -->
+			<div class="container-flex-result">
+				<h2 class="cockt__name ">Cocktail calculations</h2>
+				<div class="result-flex">
+					<h2>Cocktail cost:</h2>
+					<div class="cockt__cost"></div>
+				</div>
+				<div class="result-flex">
+					<h2>Cocktail vol%:</h2>
+					<div class="cockt__vol"></div>
+				</div>
+				<div class="result-flex">
+					<h2>Cocktail ml:</h2>
+					<div class="cockt__totalMl"></div>
+				</div>
+			</div>
+		<!-- INGREDIENT CONTAINER -->
+			<div class="container__ing__box container-ing-box">	
+
+		<!-- ADD INGREDIENT -->
+			<!-- <div class="container-flex-ingredient" id="ing-%id%">
+				<div  class="ingr-box">
+					<div class="ingr__name ingr-item">Spirit name: %spiritName%</div>
+					<div class="ingr__ml ingr-item">ml: %ingrMl%</div>
+					<div class="ingr__vol ingr-item">vol%: %vol%</div>
+					<div class="ingr__botC ingr-item">Full bottle cost: %bottleCost%</div>
+					<div class="ingr__botMl ingr-item">Full bottle capacity: %bottleMl%</div>
+				</div>
+				<div class="item__delete flex-button">
+					<button class="item__delete--btn">
+						<i class="fa fa-times"></i>
+					</button>
+				</div>
+			</div> -->
+
+		
+			</div>
+	<!-- container box end -->
+		</div>
+	</div>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/modalInfo.js"></script>
+</body>
+</html>
+
+<!-- //***********************
+// FUTURE UPGRADE
+
+// 1. More coctails
+// 2. Print menu
+// 3. Print specs
+// 4. Glass
+// 5. kcall calculation  CHALANGE 
+
+-->
